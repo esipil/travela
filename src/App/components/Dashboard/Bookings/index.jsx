@@ -9,7 +9,7 @@ const passenger = localStorage.getItem("passenger")
 console.log(passenger)
 
 useEffect(()=>{
-  fetch("/bookings", {
+  fetch("https://travela-backend-production.up.railway.app/bookings", {
     method: "GET",
     headers: {
       Authorization: `Bearer ${token}`,

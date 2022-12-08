@@ -34,7 +34,7 @@ function SingleBooking() {
   }
 
   useEffect(()=>{
-    fetch("/reviews",{
+    fetch("https://travela-backend-production.up.railway.app/reviews",{
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,

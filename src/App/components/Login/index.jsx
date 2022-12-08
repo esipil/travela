@@ -17,7 +17,7 @@ const navigate = useNavigate()
 
     function submitHandler(e){
         e.preventDefault();
-        fetch("/login", {
+        fetch("https://travela-backend-production.up.railway.app/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

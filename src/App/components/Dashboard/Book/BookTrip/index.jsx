@@ -25,7 +25,7 @@ function BookTrip() {
     }
   }
   useEffect(() => {
-    fetch(`/trips/${id.id}`, {
+    fetch(`https://travela-backend-production.up.railway.app/trips/${id.id}`, {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,

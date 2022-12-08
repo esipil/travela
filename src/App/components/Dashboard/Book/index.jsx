@@ -24,8 +24,7 @@ function Book({ user }) {
   function handleClick() {
     let filteredArr = trip.filter(
       (trip) =>
-        trip.route.start.toUpperCase() == start.toUpperCase() &&
-        trip.route.destination.toUpperCase() == destination.toUpperCase()
+        trip.route.start.toUpperCase() == start.toUpperCase() && trip.route.destination.toUpperCase() == destination.toUpperCase()
     );
     setNewTrip(filteredArr);
   }

@@ -40,7 +40,7 @@ function BookTrip() {
   }, []);
 
   useEffect(() => {
-    fetch(`/passengers/${parseInt(passenger)}`, {
+    fetch(`https://travela-backend-production.up.railway.app/trips/passengers/${parseInt(passenger)}`, {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,

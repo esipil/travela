@@ -40,7 +40,7 @@ function BookTrip() {
   }, []);
 
   useEffect(() => {
-    fetch(`https://travela-backend-production.up.railway.app/trips/passengers/${parseInt(passenger)}`, {
+    fetch(`https://travela-backend-production.up.railway.app/passengers/${parseInt(passenger)}`, {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -51,7 +51,7 @@ function BookTrip() {
   }, []);
   
   function handlePayment() {
-    fetch(`/transactions`, {
+    fetch(`https://travela-backend-production.up.railway.app/transactions`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -70,7 +70,7 @@ function BookTrip() {
   }
 
   function handleBooking() {
-    fetch("/bookings", {
+    fetch("https://travela-backend-production.up.railway.app/bookings", {
       method: "POST",
       headers: {
         "content-type": "application/json",
